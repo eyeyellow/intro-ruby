@@ -37,14 +37,12 @@
 
           <section>
             <h3>About Me</h3>
-            <div class="left" style="margin-right: 40px"><img src="images/about_me_andrew.png" class="img--bare" height="400px" /></div>
+            <div class="left" style="margin-right: 40px"><img src="images/frank_aiello.jpg" class="img--bare" height="400px" /></div>
             <ul class="fa-ul list--bare list--tall box--small">
-              <li><i class="fa-li fa fa-user"></i><a href="http://andrewsardone.com">Andrew Sardone</a></li>
-              <li><i class="fa-li fa fa-mobile"></i><a href="https://nutshell.com">Nutshell.com</a></li>
-              <li><i class="fa-li fa fa-twitter"></i><a href="https://twitter.com/andrewa2">@andrewa2</a></li>
-              <li><i class="fa-li fa fa-github"></i><a href="https://github.com/andrewsardone">github.com/andrewsardone</a></li>
-              <li><i class="fa-li fa fa-envelope-o"></i><a href="mailto:andrew@andrewsardone.com">andrew@andrewsardone.com</a></li>
-            </u>
+              <li><i class="fa-li fa fa-user"></i>Frank Aiello</li>
+              <li><i class="fa-li fa fa-github"></i><a href="https://github.com/eyeyellow">github.com/eyeyellow</a></li>
+              <li><i class="fa-li fa fa-envelope-o"></i><a href="mailto:frank@docnetwork.org">frank@docnetwork.org</a></li>
+            </ul>
           </section>
 
           <section>
@@ -105,28 +103,186 @@
             </ul>
           </section>
 
-          <!-- Homework Review - 10 min -->
           <section>
-            <h3>Homework Discussion</h3>
-            <div class="left-align">
-            <p class="box">How was the homework? Do you have any questions or concepts that you'd like to discuss?</p>
+            <h3>What we will cover today</h3>
+            <ul class="list--tall box--small ">
+              <li>Installing Ruby</li>
+              <li>Installing any other tools you'll need</li>
+              <li>Command Line Basics</li>
+              <li>Ruby Basics</li>
+            </ul>
+          </section>
+        </section>
 
-            <h6 class="grey">The Homework was:</h6>
-            <p class="box--small copy--xsmall"><strong>Practice:</strong> spend at least 20 minutes practicing navigating and creating/removing documents and directories with the command line.</p>
-            <p class="box--small copy--xsmall"><strong>Prep:</strong> Work through Code Academy's <a target="_blank" href="http://www.codecademy.com/courses/ruby-beginner-en-d1Ylq/0/1?curriculum_id=5059f8619189a5000201fbcb" alt="Code Academy">"Intro to Ruby"</a>. If you don't have previous programming experience, read Chapters 1 and 2 in <a target="_blank" href="https://pine.fm/LearnToProgram/?Chapter=01" alt="Learn to Program">Learn to Program</a> - don't try to do the exercises at the end, though. </p>
+        <section>
+          <!-- Environment setup, 60 minutes -->
+          <section>
+            <h3>Setting up your environment</h3>
+            <p class="box copy--small">It's the set of tools that you use to build software</p>
+            <ul class="list--tall box--small ">
+              <li>Terminal</li>
+              <li>Language + Packages</li>
+              <li>Text Editor</li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Different systems behave differently...</h3>
+            <ul class="list--tall box--small ">
+              <ul><i>Windows: </i><a target="_blank" href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-windows-10" alt="windows setup">Here's a good guide</a></ul>
+              <ul style="margin-left: 3em;">Terminal issues - <a target="_blank" href="https://github.com/Microsoft/WSL/issues/849#issuecomment-322163360" alt="windows troubleshooting">Check this out</a></ul>
+              <ul><i>Mac: </i><a target="_blank" href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-macos" alt="mac setup">Here's a good guide</a></ul>
+            </ul>
+            <p class="copy--small box--small">(This is my least favorite part, but we must get it out of the way first)</p>
+          </section>
+
+          <section>
+            <h3>Can't get your environment set up?</h3>
+            <p class="copy--small box">No need to fear, there's always <a target="_blank" href="https://repl.it/">REPL.IT</a></p>
+            <p class="copy--small box">Just select a language, and you'll be able to get started</p>
+          </section>
+        </section>
+
+        <section>
+          <!-- Part 2: Intro to Terminal, 20 minutes -->
+          <section>
+            <h3>Intro to Terminal</h3>
+            <div class="box copy--small">
+              <p><i>Working in the terminal can be really intimidating at first!</i></p>
+              <p class="box">With practice, <span class="blue">navigation and file manipulation</span><br/>is significantly <span class="green">faster in the terminal</span> than in the GUI.</p>
+              <p>Professional software developers use the terminal all the time,<br/>and this class will require some use of it.</p>
             </div>
           </section>
 
-          <!-- Setting the Stage - 10 min -->
           <section>
-            <h3>What we will cover today</h3>
-            <ul class="list--xtall box--small">
-              <li class="fragment">What is programming?</li>
-              <li class="fragment">Why Ruby?</li>
-              <li class="fragment">Variables, Arithmetic &amp; Objects</li>
-              <li class="fragment">Methods and Error Messages</li>
-            </ul>
+            <h3>Intro to Terminal</h3>
+            <div class="box">
+              <p class="box--small"><b>Mac users:</b> Open <strong>Terminal</strong></p>
+              <p class="box--small"><b>Windows users:</b> Search for <strong>'bash'</strong></p>
+            </div>
           </section>
+
+          <section>
+            <h3>Intro to Terminal Prompt</h3>
+            <div class="box--small copy--small">
+              <p>The line that appears in the terminal when you open it is called<br/><em>the prompt</em>.</p>
+              <p class="box--small">It usually contains information about the <strong>user and current directory</strong>.<br/>It can be customized.</p>
+              <img src="images/prompt1.png" alt="example prompt">
+              <img src="images/prompt2.png" alt="example prompt">
+              <img src="images/prompt3.png" alt="example prompt">
+              <img src="images/prompt4.png" alt="example prompt">
+              <img src="images/prompt5.png" alt="example prompt">
+              <p class="box--small"><strong>Terminal instructions</strong> often start a line with a <strong>$</strong>.<br/><small>This just represents the last character in the prompt, you don't have to type it.</small></p>
+            </div>
+          </section>
+
+          <section>
+            <h3>Terminal Cheatsheet</h3>
+            <table style="font-size: 20px; line-height: 1.4em;">
+              <tr>
+                <td style="padding-bottom: .5em;"><code>.</code></td>
+                <td>the current directory- ex: <code>touch ./wow.txt</code></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>..</code></td>
+                <td>the parent of current directory - ex: <code>cd ../RubyParty</code></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>~</code></td>
+                <td>the root directory- ex: <code>cd ~/Pictures</code></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>cd [location]</code></td>
+                <td>"change directory" to [location]</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>pwd</code></td>
+                <td>"present working directory" - where am I?</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>ls -al</code></td>
+                <td>"list all" of the contents of current directory, including invisible ones</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>touch [filename.extension]</code></td>
+                <td>create a file called [filename.extension] in the current directory</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>mkdir [directoryname]</code></td>
+                <td>create a directory called [directoryname] in the current directory<br/>
+                  <small><em>With great power comes great responsibility. <strong>Be very careful with this one.</strong></em></small>
+                  </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>rm [filename]</code></td>
+                <td>"remove" (delete) the file called [filename]</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>rm -rf [directoryname]</code></td>
+                <td>"remove recursively with force" the directory called [directoryname]</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>clear</code> OR <code>cmd+k</code></td>
+                <td>clear the terminal screen</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>help</code></td>
+                <td>lists all possible commands</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom: .5em;"><code>man [command]</code></td>
+                <td>displays the manual for [command]</td>
+              </tr>
+            </table>
+          </section>
+
+          <section>
+            <h3>Terminal Activities</h3>
+            <p class="box--small">Try out the following commands!<br/><small>Things that start with <code>#</code> are comments - you don't need to type those out.</small></p>
+            <pre><code class="terminal">
+              # navigate to your desktop
+              cd ~/Desktop    #Linux, Mac
+              cd desktop      #Windows
+
+              # make a directory called ruby_adventures
+              mkdir ruby_adventures
+
+              # navigate into the new ruby_adventures directory
+              cd ruby_adventures
+
+              # create a new file in the current (ruby_adventures) directory
+              touch hello_world.rb
+
+              # list the contents of the current (ruby_adventures) directory
+              ls
+            </code></pre>
+          </section>
+
+          <section>
+            <h3>Terminal Activities</h3>
+            <p class="box--small copy--small">Not sure what a command does? Or how it works? Use <code>man</code><br/><small>Try using <code>man</code> with a few commands. Type the letter <code>q</code> to exit <code>man</code>.</small></p>
+            <pre style="height: 30px; overflow:hidden;"><code class="terminal">
+              man ls
+            </code></pre>
+            <p>Output:</p>
+            <img src="images/manls.png" >
+          </section>
+
+          <!-- Let's Develop It - 10 min -->
+          <section>
+            <h3>Let's Develop It!</h3>
+            <p class="box--small">Working in the terminal, create a directory called <code>gdi_ruby</code> in the location of your choosing.<br/> <small>Desktop? Documents? Somewhere you'll be able to find it again!</small></p>
+            <p class="copy--small">Inside the <code>gdi_ruby</code> directory, create a file called <code>setup.txt</code>.</p>
+          </section>
+
+          <section>
+            <h3>You're all set up!</h3>
+          </section>
+
+          <section>
+            <h3>Text editors...</h3>
+          </section>
+
         </section>
 
         <!-- What Is Programming -->
